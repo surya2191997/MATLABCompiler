@@ -1,0 +1,59 @@
+Limitations : 
+->Function should be declared before defining.
+->Arrays not supported, only matrices are supported
+
+
+
+
+
+
+
+
+EXPLANATION OF GRAMMAR AUGMENTATIONS : 
+
+
+->The translator only support matrices. Arrays are not supported. Following rules are augmented :
+
+postfix-expression --> primary-expression[expression][expression]
+direct-declarator  --> IDENTIFIER [assignment-expression][assignment-expression]
+
+->To make backpatching possible by putting the index of quad where required, non terminal M has been augmented, with reduction to epsilon. 
+
+->For implementation of unconditional goto when reduced to epsilon, non terminal N has been augmented.
+
+->Non terminal F is augmented, for function declaration computation handling.
+
+
+
+ATTRIBUTES:
+
+Following attributes are supported:
+
+1. attribute_exp (struct) is used for :
+primary_expression, expression postfix-expression, constant-expression
+statement, compound-statement, selection-statement, iteration-statement
+,jump-statement, block-item-list, block-item, expression-statement,
+unary_expression, cast-expression multiplicative-express additive-expression
+shift-expression relational-expression equality-expression
+
+
+2. attribute_variable_declaration (struct) is used for :
+type_specifier, declaration_specifiers, direct_declarator, declarator,
+parameter_declaration, init_declarator, init_declarator_list, pointer
+
+3. attribute_unary (struct) is used for : 
+unary_operator
+
+4. instr (int) is used for:
+M
+
+5. attribute_N is used for:
+N.
+
+6 ival, cval, fval and sval (char*)
+
+
+
+
+
+

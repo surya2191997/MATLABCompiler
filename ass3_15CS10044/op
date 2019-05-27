@@ -1,0 +1,57 @@
+
+
+type-specifiers -> INT
+ declaration-specifiers -> type-specifiers
+direct-declarator -> IDENTIFIER
+ type-specifiers -> INT
+ declaration-specifiers -> type-specifiers
+direct-declarator -> IDENTIFIER
+declarator -> direct-declarator
+parameter-declaration -> declaration-specifiers declarator
+parameter-list -> parameter-declaration
+parameter-type-list -> parameter-list
+direct-declarator -> direct-declarator(parameter-type-list)
+ declarator -> direct-declarator
+
+	
+	type-specifiers -> INT
+ declaration-specifiers -> type-specifiers
+direct-declarator -> IDENTIFIER
+ declarator -> direct-declarator
+ primary-expression -> IDENTIFIER
+postfix-expression -> primary-expression
+unary-expression -> postfix-expression
+cast-expression -> unary-expression
+multiplicative-expression -> cast-expression
+additive-expression -> multiplicative-expression
+primary-expression -> CONSTANT
+postfix-expression -> primary-expression
+ unary-expression -> postfix-expression
+cast-expression -> unary-expression
+multiplicative-expression -> cast-expression
+additive-expression -> additive-expression - multiplicative-expression
+shift-expression -> additive-expression
+relational-expression -> shift-expression
+equality-expreesion -> relational-expression
+AND-expression -> equality-expreesion
+exclusive-OR-expression -> AND-expression
+inclusive-OR-expression -> exclusive-OR-expression
+logical-AND-expression -> inclusive-OR-expression
+logical-OR-expression -> logical-AND-expression
+conditional-expression -> logical-OR-expression
+assignment-expression -> conditional-expression
+initializer -> assignment-expression
+init-declarator -> declarator = initializer
+init-declarator-list -> init-declarator
+declaration -> declaration-specifiers init-declarator-list ;
+block-item -> declaration
+block-item-list -> block-item
+	
+	
+compound-statement -> { block-item-list }
+function-definition -> declaration-specifiers declarator compound-statement
+external-declaration -> function-definition
+translation-unit -> external-declaration
+
+
+ **************************** SYNTAX ANALYSIS OVER ****************************

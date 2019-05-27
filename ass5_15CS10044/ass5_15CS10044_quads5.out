@@ -1,0 +1,78 @@
+           					            
+  0 : main : 
+  1 : t0 = 0
+  2 : sum = t0
+  3 : t1 = 4
+  4 : t2 = 4
+  5 : t3 = 11
+  6 : param t3
+  7 : t4 = call printStr_, 1
+  8 : t5 = 0
+  9 : i = t5
+ 10 : t6 = 4
+ 11 : if i < t6 goto 17
+ 12 : goto 38
+ 13 : goto 38
+ 14 : t7 = i
+ 15 : i = i + 1
+ 16 : goto 10
+ 17 : t8 = 0
+ 18 : j = t8
+ 19 : t9 = 4
+ 20 : if j < t9 goto 26
+ 21 : goto 14
+ 22 : goto 37
+ 23 : t10 = j
+ 24 : j = j + 1
+ 25 : goto 19
+ 26 : t11 = & a
+ 27 : param t11
+ 28 : t12 = call readInt, 1
+ 29 : t13 = j * 4
+ 30 : t14 = i * 4
+ 31 : t15 = t14 * 4
+ 32 : t16 = t15 + 8
+ 33 : t13 = t13 + t16
+ 34 : t17 = m[t13]
+ 35 : m[t13] = a
+ 36 : goto 23
+ 37 : goto 14
+ 38 : t18 = 0
+ 39 : i = t18
+ 40 : t19 = 4
+ 41 : if i < t19 goto 47
+ 42 : goto 70
+ 43 : goto 70
+ 44 : t20 = i
+ 45 : i = i + 1
+ 46 : goto 40
+ 47 : t21 = 0
+ 48 : j = t21
+ 49 : t22 = 4
+ 50 : if j < t22 goto 56
+ 51 : goto 44
+ 52 : goto 69
+ 53 : t23 = j
+ 54 : j = j + 1
+ 55 : goto 49
+ 56 : if i == j goto 59
+ 57 : goto 53
+ 58 : goto 68
+ 59 : t24 = j * 4
+ 60 : t25 = i * 4
+ 61 : t26 = t25 * 4
+ 62 : t27 = t26 + 8
+ 63 : t24 = t24 + t27
+ 64 : t28 = m[t24]
+ 65 : t29 = sum + t28
+ 66 : sum = t29
+ 67 : goto 53
+ 68 : goto 53
+ 69 : goto 44
+ 70 : t30 = 12
+ 71 : param t30
+ 72 : t31 = call printStr_, 1
+ 73 : param sum
+ 74 : t32 = call printInt, 1
+ 75 : end main 
+

@@ -1,0 +1,42 @@
+
+/*
+First program for testing
+*/
+//double dddd = 2.3;
+
+int iiiii=2;
+/*
+int aaaaaa = 4, *pppp, bbbbb;
+Matrix arr[5][10];
+int product(Matrix arr[5][10], int n);
+void main();
+
+
+int product(int n) {
+       int prod = 0, i, j = 9;
+       Matrix arr[5][5];
+       for(i = 0; i < n; i++) {
+               while(j >= 0) {
+                       prod = prod*n;// + arr[i][j];
+		       j--;
+               }
+       }
+       return prod;
+}
+
+/*
+void main() {
+       Matrix a[15][15];
+       int my_prod = 0;
+       int i = 0;
+       do {
+            a[0][i] = i;
+            i++;
+       } while(i < 10);
+
+       my_prod = product(a, 5);
+
+       return;
+}
+
+*/

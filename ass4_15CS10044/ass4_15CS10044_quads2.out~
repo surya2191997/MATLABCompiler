@@ -1,0 +1,38 @@
+    					           	LINE 10 : Matrix to be assigned not of proper dimension
+GLOBAL SYMBOL TABLE : 
+t0	--- 	4	0	--- 	int 
+t1	--- 	4	4	--- 	int 
+t2	--- 	8	8	--- 	double 
+t3	--- 	8	16	--- 	double 
+t4	--- 	8	24	--- 	double 
+t5	--- 	8	32	--- 	double 
+t6	--- 	8	40	--- 	double 
+t7	--- 	8	48	--- 	double 
+a	{1,2,9,;3,4,8,;}	8	56	--- 	matrix 2 3
+main	--- 	0	64	retVal	function 
+t8	--- 	4	64	--- 	int 
+t9	--- 	4	68	--- 	int 
+func	--- 	0	72	b	function 
+t10	--- 	4	72	--- 	int 
+t11	--- 	4	76	--- 	int 
+main Symbol table :  
+retVal	--- 	4	0	--- 	int 
+func Symbol table :  
+b	--- 	6	0	--- 	matrix 2 3
+i	--- 	4	6	--- 	int 
+retVal	--- 	4	10	--- 	int 
+t12	--- 	1	14	--- 	matrix 3 2
+  0 : t0 = 2
+  1 : t1 = 3
+  2 : t2 = 1.000000
+  3 : t3 = 2.000000
+  4 : t4 = 9.000000
+  5 : t5 = 3.000000
+  6 : t6 = 4.000000
+  7 : t7 = 8.000000
+  8 : t8 = 2
+  9 : t9 = 3
+ 10 : t10 = 2
+ 11 : t11 = 3
+ 12 : func : 
+ 13 : t12 = transpose a

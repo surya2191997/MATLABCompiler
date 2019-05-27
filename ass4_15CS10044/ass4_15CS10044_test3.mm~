@@ -1,0 +1,30 @@
+int factorial(int n);				// ALL functions must be declared before defining, this is a constraint of the translator
+int main();
+int b=5,c,a;
+
+int factorial(int n) {
+	int m = n-1;
+	int r = 1;
+	if (m) {
+		int fn = factorial(m-1);
+		r = n*fn;
+	}
+	return r;
+}
+
+
+int main()
+{
+  
+  a++;
+  b = a;
+  
+  if(b<4)
+    c = a;
+  b = c++;
+
+  int k = factorial(10);
+
+
+}
+

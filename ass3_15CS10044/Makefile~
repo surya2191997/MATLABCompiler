@@ -1,0 +1,34 @@
+a.out :					lexer parser
+
+parser:					lex.yy.c ass3_15CS10044.tab.c ass3_15CS10044_parser.c
+						@cc -o parser ass3_15CS10044.tab.c ass3_15CS10044_parser.c lex.yy.c -lfl 
+
+lexer: 					lex.yy.c ass3_15CS10044.tab.c ass3_15CS10044_lexer.c
+						@cc -o lexer lex.yy.c ass3_15CS10044.tab.c ass3_15CS10044_lexer.c -lfl
+
+ass3_15CS10044.tab.c: 	ass3_15CS10044.y
+						@bison -d ass3_15CS10044.y
+
+lex.yy.c: 				ass3_15CS10044.l
+						@flex ass3_15CS10044.l
+
+clean:		
+						@rm -f -- a.out lex.yy.c lexer parser *.o *.dot *.tab.* *.output
+
+reset_output_files:
+						@rm -f -- ass3_test_*_*_15CS10044
+
+test_all:				
+						@make -s
+						@echo test1_lexer test2_lexer test1_parser test2_parser | xargs make -s
+test1_parser:
+						@./parser < ass3_test_1.mm > ass3_test_1_dr_15CS10044
+
+test2_parser:
+						@./parser < ass3_test_2.mm > ass3_test_2_dr_15CS10044
+
+test1_lexer:
+						@./lexer < ass3_test_1.mm > ass3_test_1_tokens_15CS10044
+
+test2_lexer:
+						@./lexer < ass3_test_2.mm > ass3_test_2_tokens_15CS10044

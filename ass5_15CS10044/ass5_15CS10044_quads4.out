@@ -1,0 +1,80 @@
+           					               
+  0 : main : 
+  1 : t0 = 3
+  2 : t1 = 3
+  3 : t2 = 9
+  4 : param t2
+  5 : t3 = call printStr_, 1
+  6 : t4 = 0
+  7 : i = t4
+  8 : t5 = 3
+  9 : if i < t5 goto 15
+ 10 : goto 70
+ 11 : goto 70
+ 12 : t6 = i
+ 13 : i = i + 1
+ 14 : goto 8
+ 15 : t7 = 0
+ 16 : j = t7
+ 17 : t8 = 3
+ 18 : if j < t8 goto 24
+ 19 : goto 12
+ 20 : goto 69
+ 21 : t9 = j
+ 22 : j = j + 1
+ 23 : goto 17
+ 24 : t10 = & a
+ 25 : param t10
+ 26 : t11 = call readInt, 1
+ 27 : t12 = j * 4
+ 28 : t13 = i * 3
+ 29 : t14 = t13 * 4
+ 30 : t15 = t14 + 8
+ 31 : t12 = t12 + t15
+ 32 : t16 = m[t12]
+ 33 : m[t12] = a
+ 34 : t17 = 0
+ 35 : if i == t17 goto 41
+ 36 : goto 37
+ 37 : t18 = 0
+ 38 : if j == t18 goto 41
+ 39 : goto 51
+ 40 : goto 51
+ 41 : t19 = 0
+ 42 : t20 = 0
+ 43 : t21 = t20 * 4
+ 44 : t22 = t19 * 3
+ 45 : t23 = t22 * 4
+ 46 : t24 = t23 + 8
+ 47 : t21 = t21 + t24
+ 48 : t25 = m[t21]
+ 49 : largest = t25
+ 50 : goto 51
+ 51 : t26 = j * 4
+ 52 : t27 = i * 3
+ 53 : t28 = t27 * 4
+ 54 : t29 = t28 + 8
+ 55 : t26 = t26 + t29
+ 56 : t30 = m[t26]
+ 57 : if largest < t30 goto 60
+ 58 : goto 21
+ 59 : goto 68
+ 60 : t31 = j * 4
+ 61 : t32 = i * 3
+ 62 : t33 = t32 * 4
+ 63 : t34 = t33 + 8
+ 64 : t31 = t31 + t34
+ 65 : t35 = m[t31]
+ 66 : largest = t35
+ 67 : goto 21
+ 68 : goto 21
+ 69 : goto 12
+ 70 : t36 = 10
+ 71 : param t36
+ 72 : t37 = call printStr_, 1
+ 73 : param largest
+ 74 : t38 = call printInt, 1
+ 75 : t39 = 0
+ 76 : return t39
+ 77 : end main 
+

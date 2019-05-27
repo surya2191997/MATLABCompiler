@@ -1,0 +1,71 @@
+    		                   	                           	                                                            		       GLOBAL SYMBOL TABLE : 
+t0	--- 	4	0	--- 	int 
+t1	--- 	4	4	--- 	int 
+func	--- 	0	8	arr	function 
+t2	--- 	4	8	--- 	int 
+t3	--- 	4	12	--- 	int 
+func Symbol table :  
+arr	--- 	25	0	--- 	matrix 5 5
+n	--- 	4	25	--- 	int 
+retVal	--- 	4	29	--- 	int 
+t4	--- 	4	33	--- 	int 
+prod	0 	4	37	--- 	int 
+i	--- 	4	41	--- 	int 
+t5	--- 	4	45	--- 	int 
+j	9 	4	49	--- 	int 
+t6	--- 	1	53	--- 	matrix 5 5
+t7	--- 	4	54	--- 	int 
+t8	--- 	1	58	--- 	matrix 5 5
+t9	--- 	4	59	--- 	int 
+t10	--- 	4	63	--- 	int 
+t11	--- 	4	67	--- 	int 
+t12	--- 	4	71	--- 	int 
+t13	--- 	4	75	--- 	int 
+t14	--- 	4	79	--- 	int 
+t15	--- 	4	83	--- 	int 
+t16	--- 	4	87	--- 	int 
+t17	--- 	8	91	--- 	double 
+t18	--- 	8	99	--- 	double 
+t19	--- 	8	107	--- 	double 
+t20	--- 	4	115	--- 	int 
+t21	--- 	4	119	--- 	int 
+  0 : t0 = 5
+  1 : t1 = 5
+  2 : t2 = 5
+  3 : t3 = 5
+  4 : func : 
+  5 : t4 = 0
+  6 : t5 = 9
+  7 : t6 = transpose arr
+  8 : arr = t6
+  9 : t7 = 9
+ 10 : t8 = arr * t7
+ 11 : arr = t8
+ 12 : t9 = 0
+ 13 : i = t9
+ 14 : if i < n goto 20
+ 15 : goto 39
+ 16 : goto 39
+ 17 : t10 = i
+ 18 : i = i + 1
+ 19 : goto 14
+ 20 : t11 = 0
+ 21 : if j >= t11 goto 24
+ 22 : goto 17
+ 23 : goto 38
+ 24 : t12 = prod * n
+ 25 : t13 = j * 8
+ 26 : t14 = i * 5
+ 27 : t15 = t14 * 8
+ 28 : t16 = t15 + 8
+ 29 : t13 = t13 + t16
+ 30 : t17 = arr[t13]
+ 31 : t18 = int2dbl(t12)
+ 32 : t19 = t18 + t17
+ 33 : t20 = dbl2int(t19)
+ 34 : prod = t20
+ 35 : t21 = j
+ 36 : j = j - 1
+ 37 : goto 20
+ 38 : goto 17
+ 39 : return prod

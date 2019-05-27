@@ -1,0 +1,9 @@
+int main();
+
+int main()
+{
+char c ='a', d;
+int k=2, i =4;
+for(i=0;i<6;i++)
+c++;
+}
